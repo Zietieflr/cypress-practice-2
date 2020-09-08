@@ -1,0 +1,37 @@
+describe("Kyle Coberly", () => {
+  it("should have inputs for my email and message, which can be sent", () => {
+    cy.visit("https://kylecoberly.com/")
+    cy.get("#email").type("logansFake@email.com")
+    cy.get("#message").type("A message for you.")
+    // cy.get("#contact-form").submit()
+  })
+})
+
+// describe("Cypress website", () => {
+//   it("has an h1 which says 'Querying'", () => {
+//     cy.visit("https://example.cypress.io/commands/querying")
+//     cy.get("h1").should("have.text", 'Querying')
+//   })
+// })
+
+// describe("Drizly", () => {
+//   it("displays 'Beer, wine and liquor delivered to your doorstep.'", () => {
+//     cy.visit("https://drizly.com/home")
+//     cy.get(".ribbon-module__RibbonLink___1kmHf").should("have.text", "Beer, wine and liquor delivered to your doorstep.")
+//   })
+// })
+
+// describe("Instacart", () => {
+//   it("shows 'groceries delivered in 1 hour or less", () => {
+//     cy.visit("https://instacart.com")
+//     cy.get("h1").should("have.text", "Groceries delivered in as little as 1 hour")
+//   })
+// })
+
+// describe("Google", () => {
+//   it("Google's page loads", () => {
+//     cy.visit("https://www.google.com")
+//     cy.get("#hplogo").should("exist")
+//     cy.contains("Google")
+//   })
+// })
